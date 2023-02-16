@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- HTML Meta Tags -->
+    <title>Memic</title>
+    <meta name="viewport" content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="https://yeemachine.github.io/kalidoface-live2d-models/Icons/icon-circle.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="mediapipe/camera_utils.js"></script>
+    <script src="mediapipe/control_utils.js"></script>
+    <script src="mediapipe/drawing_utils.js"></script>
+    <script src="mediapipe/holistic.js"></script>
+    <script src="mediapipe/tf.js"></script>
+    <script src="mediapipe/face-landmarks-detection.js"></script>
+    <script src="three.js/three.min.js"></script>
+    <script src="three.js/GLTFLoader.js"></script>
+    <script src="kalidokit.js"></script>
+   
+  </head>
+  <body>
+    <div class="preview">
+      <div style="display: none;"><video class="guides" class="input_video" autoplay muted playsinline></video></div>
+      <!-- <video id="mediapipe-video" class="input_video" width="1280px" height="720px"  autoplay muted playsinline></video> -->
+      <canvas class="output_canvas"></canvas>
+      <canvas id="c" class="guides"></canvas>      
+  </body>
+</html>
+<script type="text/javascript" src="vars.js"></script>
+<script type="text/javascript" src="poseConvertNames.js"></script>
+<script type="text/javascript" src="scene.js"></script>
+<script type="text/javascript" src="actions.js"></script>
+<script type="text/javascript" src="capture.js"></script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mimic</title>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style1.css" />
+  <script src="mediapipe/camera_utils.js"></script>
+  <script src="mediapipe/control_utils.js"></script>
+  <script src="mediapipe/drawing_utils.js"></script>
+  <script src="mediapipe/holistic.js"></script>
+  <script src="mediapipe/tf.js"></script>
+  <script src="mediapipe/face-landmarks-detection.js"></script>
+  <script src="three.js/three.min.js"></script>
+  <script src="three.js/GLTFLoader.js"></script>
+  <script src="kalidokit.js"></script>
+</head>
+
+<body>
+    <!-- We hide the video input-->
+    <div style="display: none;"><video class="input_video"></video></div>
+    <table border=0><tr>
+      <td><canvas class="output_canvas" width="640px" height="360px"></canvas></td>
+      <td><canvas id="c" class="guides"></canvas></td>
+    </tr></table>
+</body>
+</html>
+<script type="text/javascript" src="vars.js"></script>
+<script type="text/javascript" src="poseConvertNames.js"></script>
+<script type="text/javascript" src="scene.js"></script>
+<script type="text/javascript" src="actions.js"></script>
+<script type="text/javascript" src="capture.js"></script>
